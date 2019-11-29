@@ -12,7 +12,7 @@ soup = BeautifulSoup(html_page, "html.parser")
 
 output = ""
 
-for link in soup.findAll('a', attrs={'href': re.compile("^/multilingual/content/igf-2019-%E2%80%93")}):
+for link in soup.findAll('a', attrs={'href': re.compile("^/multilingual/content/igf-2019")}):
     transcript_html = subprocess.Popen(["wget", "-qO-", base + link.get("href")],
                                        stdout=subprocess.PIPE).communicate()[0]
     inner_html = BeautifulSoup(transcript_html, "html.parser").findAll('div', {'class': 'WordSection1'})
