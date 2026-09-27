@@ -13,11 +13,11 @@ import re
 
 if __name__ == '__main__':
     # you can comment those out if you fulfill the requirements
-    # nltk.download('stopwords')
-    # nltk.download('punkt')
-    # nltk.download('averaged_perceptron_tagger')
+    #nltk.download('stopwords')
+    #nltk.download('punkt')
+    #nltk.download('averaged_perceptron_tagger')
 
-    with open('allTranscripts.txt', 'r') as file:
+    with open('./allTranscripts.txt', 'r') as file:
         text = file.read()
 
     # todo filter out r ^^new transcript...
@@ -45,3 +45,4 @@ if __name__ == '__main__':
 
     fdist = FreqDist(nouns)
     print(fdist.most_common(500))
+

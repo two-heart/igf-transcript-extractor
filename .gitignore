@@ -1,0 +1,11 @@
+.Python
+[Bb]in
+[Ll]ib
+[Ii]nclude
+[Ll]ocal
+[Ll]ib64
+[Ss]cripts
+[Ss]hare
+pyvenv.cfg
+pip-selfcheck.json
+.venv
